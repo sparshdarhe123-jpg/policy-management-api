@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: policy-api
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/policy_db
+    username: ${DB_USERNAME:postgres}
+    password: ${DB_PASSWORD:postgres}
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: true
+    open-in-view: false
+
+server:
+  port: 8080
+
+logging:
+  level:
+    com.sparshdarhe.policyapi: INFO
