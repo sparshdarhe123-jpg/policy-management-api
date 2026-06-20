@@ -40,8 +40,8 @@ Java 17 · Spring Boot 3 · Spring Data JPA · PostgreSQL · Maven · JUnit 5 ·
 curl -X POST http://localhost:8080/api/v1/policies \
   -H "Content-Type: application/json" \
   -d '{
-    "holderName": "Asha Verma",
-    "holderEmail": "asha@example.com",
+    "holderName": "Sparsh Darhe",
+    "holderEmail": "sparsh@example.com",
     "policyType": "HEALTH",
     "sumInsured": 500000,
     "startDate": "2026-07-01",
@@ -55,8 +55,8 @@ Response:
 {
   "id": 1,
   "policyNumber": "POL-482913",
-  "holderName": "Asha Verma",
-  "holderEmail": "asha@example.com",
+  "holderName": "Sparsh Darhe",
+  "holderEmail": "sparsh@example.com",
   "policyType": "HEALTH",
   "status": "QUOTED",
   "sumInsured": 500000,
